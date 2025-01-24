@@ -1,0 +1,4 @@
+requests
+xmltodict
+rich
+ipdb
