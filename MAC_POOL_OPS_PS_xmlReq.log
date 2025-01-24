@@ -1,0 +1,352 @@
+[------------- Sending Request to Server ------------
+
+<configResolveClass
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricEthLan"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveClass>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricLanPinGroup"
+inDn="fabric/lan"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricEthLanPc"
+inDn="fabric/lan/A"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricEthLanPc"
+inDn="fabric/lan/B"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configScope
+dn="fabric/lan/A"
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inClass="fabricEthLanEp"
+inHierarchical="false"
+inRecursive="false">
+    <inFilter>
+    </inFilter>
+</configScope>
+
+<configScope
+dn="fabric/lan/B"
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inClass="fabricEthLanEp"
+inHierarchical="false"
+inRecursive="false">
+    <inFilter>
+    </inFilter>
+</configScope>
+
+<configResolveClass
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="orgOrg"
+inHierarchical="false">
+    <inFilter>
+<eq class="orgOrg" property="level" value="root"/>
+    </inFilter>
+</configResolveClass>
+
+<configResolveClass
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricEthEstcCloud"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveClass>
+
+<configResolveClass
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricEthMonLan"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveClass>
+
+<configResolveClass
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricDceSrv"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveClass>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="qosclassDefinition"
+inDn="fabric/lan"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricEthEstc"
+inDn="fabric/eth-estc"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveClass
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="flowctrlDefinition"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveClass>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="vnicVnicBehPolicy"
+inDn="org-root"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="fabricDceSwSrv"
+inDn="fabric/server"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="macpoolPool"
+inDn="org-root"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="macpoolBlock"
+inDn="org-root/mac-pool-default"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveDn
+dn="sys"
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inHierarchical="false">
+</configResolveDn>
+
+<configEstimateImpact
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d">
+    <inConfigs>
+<pair key="org-root/mac-pool-MAC_POOL_PS">
+    <macpoolPool
+    descr="log_testing_using SDK"
+    name="MAC_POOL_PS"
+    dn="org-root/mac-pool-MAC_POOL_PS"
+    
+    status="created"
+    
+    sacl="addchild,del,mod">
+        <macpoolBlock
+        from="00:25:B5:00:00:00"
+        to="00:25:B5:00:00:7F"
+        
+        rn="block-00:25:B5:00:00:00-00:25:B5:00:00:7F"
+        status="created"
+        
+        sacl="addchild,del,mod">
+        </macpoolBlock>
+    </macpoolPool>
+</pair>
+    </inConfigs>
+</configEstimateImpact>
+
+<configConfMos
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inHierarchical="false">
+    <inConfigs>
+<pair key="org-root/mac-pool-MAC_POOL_PS">
+    <macpoolPool
+    descr="log_testing_using SDK"
+    name="MAC_POOL_PS"
+    dn="org-root/mac-pool-MAC_POOL_PS"
+    
+    status="created"
+    
+    sacl="addchild,del,mod">
+        <macpoolBlock
+        from="00:25:B5:00:00:00"
+        to="00:25:B5:00:00:7F"
+        
+        rn="block-00:25:B5:00:00:00-00:25:B5:00:00:7F"
+        status="created"
+        
+        sacl="addchild,del,mod">
+        </macpoolBlock>
+    </macpoolPool>
+</pair>
+    </inConfigs>
+</configConfMos>
+
+<configResolveDn
+dn="sys"
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inHierarchical="false">
+</configResolveDn>
+
+<configResolveChildren
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+classId="macpoolBlock"
+inDn="org-root/mac-pool-MAC_POOL_PS"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveChildren>
+
+<configResolveDn
+dn="sys"
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inHierarchical="false">
+</configResolveDn>
+
+<configEstimateImpact
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d">
+    <inConfigs>
+<pair key="org-root/mac-pool-MAC_POOL_PS/block-00:25:B5:00:00:0F-00:25:B5:00:00:8E">
+    <macpoolBlock
+    from="00:25:B5:00:00:0F"
+    to="00:25:B5:00:00:8E"
+    dn="org-root/mac-pool-MAC_POOL_PS/block-00:25:B5:00:00:0F-00:25:B5:00:00:8E"
+    
+    status="created"
+    
+    sacl="addchild,del,mod">
+    </macpoolBlock>
+</pair>
+    </inConfigs>
+</configEstimateImpact>
+
+<configResolveDn
+dn="sys"
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inHierarchical="false">
+</configResolveDn>
+
+<configEstimateImpact
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d">
+    <inConfigs>
+<pair key="org-root/mac-pool-MAC_POOL_PS/block-00:25:B5:00:00:1F-00:25:B5:00:00:9E">
+    <macpoolBlock
+    from="00:25:B5:00:00:1F"
+    to="00:25:B5:00:00:9E"
+    dn="org-root/mac-pool-MAC_POOL_PS/block-00:25:B5:00:00:1F-00:25:B5:00:00:9E"
+    
+    status="created"
+    
+    sacl="addchild,del,mod">
+    </macpoolBlock>
+</pair>
+    </inConfigs>
+</configEstimateImpact>
+
+<configResolveDn
+dn="sys"
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inHierarchical="false">
+</configResolveDn>
+
+<configEstimateImpact
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d">
+    <inConfigs>
+<pair key="org-root/mac-pool-MAC_POOL_PS/block-00:25:B5:00:00:80-00:25:B5:00:00:FF">
+    <macpoolBlock
+    from="00:25:B5:00:00:80"
+    to="00:25:B5:00:00:FF"
+    dn="org-root/mac-pool-MAC_POOL_PS/block-00:25:B5:00:00:80-00:25:B5:00:00:FF"
+    
+    status="created"
+    
+    sacl="addchild,del,mod">
+    </macpoolBlock>
+</pair>
+    </inConfigs>
+</configEstimateImpact>
+
+<configConfMos
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inHierarchical="false">
+    <inConfigs>
+<pair key="org-root/mac-pool-MAC_POOL_PS/block-00:25:B5:00:00:80-00:25:B5:00:00:FF">
+    <macpoolBlock
+    from="00:25:B5:00:00:80"
+    to="00:25:B5:00:00:FF"
+    dn="org-root/mac-pool-MAC_POOL_PS/block-00:25:B5:00:00:80-00:25:B5:00:00:FF"
+    
+    status="created"
+    
+    sacl="addchild,del,mod">
+    </macpoolBlock>
+</pair>
+    </inConfigs>
+</configConfMos>
+
+<configEstimateImpact
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d">
+    <inConfigs>
+<pair key="org-root/mac-pool-MAC_POOL_PS">
+    <macpoolPool
+    dn="org-root/mac-pool-MAC_POOL_PS"
+    
+    status="deleted,modified"
+    
+    sacl="addchild,del,mod">
+    </macpoolPool>
+</pair>
+    </inConfigs>
+</configEstimateImpact>
+
+<configConfMos
+cookie="1737186048/88231e3b-b516-4352-aeeb-b98cfb30952d"
+inHierarchical="false">
+    <inConfigs>
+<pair key="org-root">
+    <orgOrg
+    name="root"
+    dn="org-root"
+    
+    status="created,modified"
+    
+    sacl="addchild,del,mod">
+        <macpoolPool
+        
+        rn="mac-pool-MAC_POOL_PS"
+        status="deleted,modified"
+        
+        sacl="addchild,del,mod">
+        </macpoolPool>
+    </orgOrg>
+</pair>
+    </inConfigs>
+</configConfMos>
+-----------------------------------------------------]
