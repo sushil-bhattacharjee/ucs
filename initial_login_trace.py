@@ -1,5 +1,6 @@
 import requests
 import xmltodict
+import ipdb
 
 
 log_response = requests.post(
@@ -11,7 +12,7 @@ log_response = requests.post(
 log_response.raise_for_status()
 print(log_response.text)
 log_output = xmltodict.parse(log_response.text)
-import ipdb
+
 
 ipdb.set_trace()
 
